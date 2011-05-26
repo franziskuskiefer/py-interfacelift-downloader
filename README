@@ -1,3 +1,5 @@
+This is a slight experiment. Since wget is executed with the -nc option there is no need to check if the file exists from within Python. only one wget command is executed with a list of files instead of one wget per file. This enables the use of --wait and --random-wait.
+
 The regex pattern matches any string which:
 
 - Is preceeded by <a href="
