@@ -4,7 +4,7 @@ import urllib2
 import re
 
 url       = 'http://interfacelift.com/wallpaper/downloads/rating/widescreen/1920x1200/'
-directory = '~'
+directory = '~/Pictures/Interfacelift/Rating'
 useragent = 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.3) Gecko/20100401 Firefox/3.6.3 (.NET CLR 3.5.30729)'
 pattern   = '(?<=<a href=")/wallpaper/.*jpg(?=">)' # The regex pattern used. Check the README
 wgetopts  = " --wait=5 --random-wait --limit-rate=100K --retry-connrefused --referer=http://interfacelift.com/ "
