@@ -20,4 +20,4 @@ if len(pictures) > 0:
         os.system('wget -P ' + directory + ' -nc -U "' + useragent + '" ' + wgetopts + ' -- ' + " http://interfacelift.com".join(pictures))
         print "Complete."
 else:
-        print "No pictures to download"
+        print "No pictures to download. Either the range is zero in length or the regex needs to be refined."
