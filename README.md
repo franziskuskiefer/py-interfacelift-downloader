@@ -19,7 +19,7 @@ where
 
 Check how the URL changes when you select the options in Interfacelift itself.
 
-To specify where to save the images, edit the `directory` string. Please leave `expanduser('~')` as it is (unless you now what you're doing) and rather edit the string after the `+` sign. Start the string with `/` and choose the folder you want. If it doesn't exists, `wget` will create it.
+To specify where to save the images, edit the `directory` string. Please leave `expanduser('~')` as it is (unless you now what you're doing) and rather edit the string after the `+` sign. Start the string with `/` and choose the folder you want. If it doesn't exists, `wget` will create it. The variable `rate` controls the download rate wget operates with. It is specified as a string to allow postfixes such as K and M.
 
 To specify how many pictures you want, edit the `range()` function. To download the pictures from the _n_ first pages, change it to read `range(1,n+1)`. This will download 10 _n_ images.
 
