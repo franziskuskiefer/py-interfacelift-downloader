@@ -1,3 +1,5 @@
+Usage: interfacelift.py <PathToStoreWallpapers>
+
 The regex pattern matches any string which:
 
 - Is preceeded by <a href="
