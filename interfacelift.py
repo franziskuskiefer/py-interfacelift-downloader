@@ -36,7 +36,7 @@ if len(sys.argv) > 1:
                         os.system('jhead -cl "' + linkurl + '" '+directory+s[3]+"_"+s[4]+"_"+s[5])
             if urlcount == 0:
                     quit()
-            count += 1
             os.system('rm -rf /tmp/index'+str(count)+".html")
+            count += 1
 else:
     print "Usage: interfacelift.py <PathToStoreWallpapers>"
