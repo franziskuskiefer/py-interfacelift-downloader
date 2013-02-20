@@ -20,7 +20,8 @@ if len(sys.argv) > 1:
     directory = sys.argv[1]
     count     = 1
     while count < 999999:
-            data       = urllib2.urlopen(url + "index" + str(count) + ".html").read()
+            os.system('wget -P /tmp/ -nc -U "' + useragent + '" ' + url+"index"+str(count)+".html")
+            data = open('/tmp/index'+str(count)+".html", 'r').read()
             pictures   = re.findall(pattern, data)
             urlcount   = len(pictures)
             for picture in pictures:
@@ -36,5 +37,6 @@ if len(sys.argv) > 1:
             if urlcount == 0:
                     quit()
             count += 1
+            os.system('rm -rf /tmp/index'+str(count)+".html")
 else:
     print "Usage: interfacelift.py <PathToStoreWallpapers>"
